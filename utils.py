@@ -17,10 +17,10 @@ def unprep (a):
     return np.squeeze(a)
 def figurefullwidth():
     plt.figure(figsize=(25,5));
-def subplot(a):
-    plt.subplot(1,3,a);
-def subplottitle(n, title):
-    ax = plt.subplot(1, 3, n)
+def subplot(n):
+    plt.subplot(1,3,n);
+def subplottitle(n, title, w=3):
+    ax = plt.subplot(1, w, n)
     ax.set_title(title)
     
 import time
@@ -33,13 +33,20 @@ class timeit(object):
         self.start_time = time.time()
         
 from IPython.core.display import display, HTML
-def dispdf(df, width, num=5, cols=0):
+def dispdf(df, width=10, num=0, cols=0):
     if cols==0:
         cols=len(df.columns)
+    if num == 0:
+        if(df.shape[1] > 20):
+            num = 5
+        else:
+            num = df.shape[1]
+        
     #print(list(range(0, len(df.columns), width)))
     for i in range(0, cols, width):
         #print(df.ix[:,0:5].head())
         display(df.ix[:,i:i+min(width, len(df.columns))].head(num))
+        
         
 def encodeonehot(df, cols):
     
