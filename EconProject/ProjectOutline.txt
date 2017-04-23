@@ -1,0 +1,24 @@
+1 Introduction
+Background
+Questionsbeingasked 
+Whyisthisinteresting
+
+2 Theory
+Link this topic to the literature
+setup model
+hypothesis
+Q’s to answer
+ReasonsnottouseOLS
+
+3 Data
+Describethedata
+Cycle of people more likely to die in december, if we have this
+data?
+
+4 Statistical Model
+
+5 Results
+
+6 Conclusions
+
+7 Apendicies

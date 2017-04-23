@@ -1,0 +1,715 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Economics Project: Factors affecting survivorship rates from respondents
+ to the English longditudinal survey 2002-16
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+question being asked, background and why this is interesting
+\end_layout
+
+\begin_layout Subsection
+Background
+\end_layout
+
+\begin_layout Standard
+The demographics of the UK is changing.
+ We have a population that is living longer and the life expectatncy for
+ men and women is predicted to be 93.5 and 96.5 by 2030.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+Exploring the causes of mortality not only allows policy to be formed that
+ more efficiently manages resources for this ageing population but also
+ allows education of individuals to choose lifestyle choices that will reduce
+ their risk of early death.
+ In a developed country such as the UK, mortality rates at younger ages
+ is very low so the most effective improvements in mortality come from focusing
+ on the older population.
+\end_layout
+
+\begin_layout Standard
+The Engish Longditudinal Study of Ageing is a study started in 2002 focusing
+ on following a group of approximately 10,000 individuals over 50 years
+ old.
+ These individuals were in private residences.The questionaire explores demograph
+ics, economic data( House hold income, Wealth, Pension, Employment, Consumption,
+ Expectations (mortality, employment, income adequancy)) and health data.
+ There has been a vast amount of research into the link between smoking
+ and premature death.
+ This survey also wants to see what life was like for individuals before
+ their deaths.
+ So a lot of the health data is concerned with how good the quality of life
+ is for people prior to their death.
+ This includes living with certain conditions, how ability to walk, wash
+ and clothe oneself impacts of mortality.
+ And how mental health affects.
+\end_layout
+
+\begin_layout Standard
+Health sections include, general health, Health behaviours (smoking), mental
+ health, Mobility assement, blood analys, cognitive fucntions
+\end_layout
+
+\begin_layout Standard
+Also included was psychosocial (tv watching etc) included in the study.
+\end_layout
+
+\begin_layout Standard
+The information collected provides data about, household and individual
+ demographics, Health pyhsical and psychosocial, work and pensions, income
+ and assets, housing, cognitive function, social participation, effor and
+ reward(voluntary work and caring), Expectations and walking speed.
+ 
+\end_layout
+
+\begin_layout Subsection
+Questions being asked
+\end_layout
+
+\begin_layout Standard
+I'd like to see what kind of socio economic effects are heavily linked with
+ mortality.
+ I think things such as income, savings, smoker status, social class, tv
+ watching, alcohol, physical activity are related to mortality.
+ My hypothesis is that perceived unhealthy behaviours such as tv watching,
+ smoking, alcohol will be negatively correlated with mortality and percieved
+ positive behaviours such as physical activity, income, savings and social
+ class will the positively correlated with mortality.
+ Such things as age and sex are already widely regarded as being negatively
+ correlated with mortality and regards sex, women living longer than men
+ so I'm trying to dig deeper than that for this project.
+ 
+\end_layout
+
+\begin_layout Standard
+Rference for introduction : http://www.macs.hw.ac.uk/~iain/research/Currie.SM.pdf
+\end_layout
+
+\begin_layout Subsection
+Why is this interesting
+\end_layout
+
+\begin_layout Standard
+If we know the causes of mortality policy makers can more efficiently allocate
+ resources and also disseminate information to allow people to make more
+ informed choices of their lifestyle.
+ 
+\end_layout
+
+\begin_layout Section
+Theory
+\end_layout
+
+\begin_layout Subsection
+link to literature, 
+\end_layout
+
+\begin_layout Subsection
+setup model & hypothesis, 
+\end_layout
+
+\begin_layout Subsection
+Q's to answer
+\end_layout
+
+\begin_layout Standard
+heterogenity - unintended variation across groups/participants
+\end_layout
+
+\begin_layout Standard
+The idea of linking mortality to socio economic factors is not new.
+ The ELSA is a very rich form of data and.
+\end_layout
+
+\begin_layout Standard
+Fe analysis is used when interested in the impact of variables over time.
+ FE is interesting when we want to explore the relationship between independent
+ and dependent variables within an entity(group, country etc).
+ We assume that something within the group may bias the independent or dependent
+ variables and we need to control this.
+ We assume there is a correlation between the error terms and dependent
+ variables which is why we use FE.
+ Fe removes the effect so we can assess net effect of indep on dep variables.
+ 
+\end_layout
+
+\begin_layout Standard
+Also those group characteristics are not correlated with another groups
+ characteristics.
+ If they are correlated we can detect with the Hausman test.
+ This leads us to model the behaviour using random effects model instead.
+ 
+\end_layout
+
+\begin_layout Standard
+Fixed Effects model does not work well for slow changing variables or where
+ there is minimal within group variation.
+ 
+\end_layout
+
+\begin_layout Standard
+This may be the model I use
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+You could add time effects to the entity effects model to have a time and
+ entity fixed effects regression model: Yit = β0 + β1X1,it +...+ βkXk,it +
+ γ2E2 +...+ γnEn + δ2T2 +...+ δtTt + uit [eq.3] Where –Yit is the dependent variable
+ (DV) where i = entity and t = time.
+ –Xk,it represents independent variables (IV), –βk is the coefficient for
+ the IVs, –uit is the error term –En is the entity n.
+ Since they are binary (dummies) you have n-1 entities included in the model.
+ –γ2 is the coefficient for the binary regressors (entities) .
+ –Tt is time as binary variable (dummy), so we have t-1 time periods.
+ –δ t is the coefficient for the binary time regressors .
+\begin_inset Quotes erd
+\end_inset
+
+ - from Panel 101.pdf
+\end_layout
+
+\begin_layout Standard
+We will use least squares dummy variable model (LSDV) -explain
+\end_layout
+
+\begin_layout Standard
+The effect of smokerate is medidated by the differences across couuntries
+\end_layout
+
+\begin_layout Standard
+By adding the dummy for each country we are estimating the pure effect of
+ smokerate by controling for the unobserved heterogeneity
+\end_layout
+
+\begin_layout Standard
+Each dummy is absorbing the effects particular to each country
+\end_layout
+
+\begin_layout Standard
+FE model control for all time-invariant differences between groups so estimated
+ coefficients cannot be biased by time-invariabnt charactertistcs.
+ 
+\end_layout
+
+\begin_layout Standard
+Random effects model the variabtion is random and uncorrelated with dep
+ or indep variables in model.
+ If we believe difference across entities have some influence on dep variables
+ the use random effects
+\end_layout
+
+\begin_layout Subsection
+Reasons not to use OLS
+\end_layout
+
+\begin_layout Standard
+Taken from a paper so reword
+\begin_inset Quotes erd
+\end_inset
+
+An application I will walk you through many applications of fixed effect
+ models.
+ Here is one to ponder.
+ There have recently been high profile studies of the relationship between
+ staffing in hospitals and patient outcomes.
+ These studies use traditional OLS regression where the unit of observation
+ is the patient, the dependent variable is some outcome measure like mortality
+ (a dummy variable that equals 1 if the patient died in the hospital) and
+ the key predictor is staffing (e.g., nurses per patient).
+ These studies do not use fixed effects, and invariably show that hospitals
+ with more staff have better patient outcomes.
+ These results have had enormous policy implications.
+ Unfortunately, these studies may suffer from omitted variable bias.
+ For example, the key unobservable variable might be the severity of patients’
+ illnesses, which is notoriously difficult to control for with available
+ data.
+ Severity is likely to be correlated with both mortality and staffing, so
+ that the coefficient on staffing will be biased.
+ (What is the direction of the bias?) If you ran a hospital fixed-effects
+ model, you would include hospital dummies in the regression that would
+ control for observable and unobservable differences in severity (and all
+ other factors) across hospitals.
+ This would greatly reduce potential omitted variable bias.
+ None of the current research in this field has done so, perhaps because
+ there is not enough intrahospital variation in staffing to allow for fixed-effe
+cts estimation.
+ Even a fixed effects model would not completely eliminate potential omitted
+ variable bias.
+ You must also hope that any changes over time in unobservable patient severity
+ within each hospital are uncorrelated with changes over time in staffing.
+ This might not be such a good assumption.
+ As hospitals experience increases in severity, they may increase staffing.
+ If so, then unobservable severity within a hospital is correlated with
+ staffing and the omitted variable bias is still present.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Data
+\end_layout
+
+\begin_layout Subsection
+Describe the survey in language
+\end_layout
+
+\begin_layout Standard
+All analaysis done using STATA 13
+\end_layout
+
+\begin_layout Standard
+The English Longitudinal Study of Ageing (ELSA) started in 2002.
+ ELSA is a collaboration between Univeristy College London (UCL), the institute
+ for Fiscal Sutdies (IFS) and NatCen Social Research.
+ It is a large scale longditudianl panel study of men and women aged 50
+ and over and their partners.
+ They are living in private households in England.
+ The orginal (Wave 0) participants were drawn from the Health Survey for
+ England (HSE).
+ Approximately 10,000 people are studies in each wave with the sample being
+ refreshed in wave 3,4,6 and 7 due to people dropping out and death.
+ Respondents were intervieved at approximaltey 2 yearly interviews, Wave1-
+ March 2002 to March 2003, Wave2 -June 2004 - July 2005, wave3- May 2006-August
+ 2007, Wave 4 - May 2008-July 2009, Wave 5 - June 2010-July 2011, Wave 6
+ May 2012 - June 2013, Wave 7 June 2014 - May 2015.
+ 
+\end_layout
+
+\begin_layout Standard
+We are concerned with mortality data which has only been updated until Wave
+ 6 as of this time.
+ So we will concern ourselves with individuals who responded in the first
+ wave and every wave up until their death.
+ So there are not gaps in the data set.
+ (Insert number here).
+ When respondent die they can obviously no longer give responses to the
+ questions in the data set.
+ As the sample size is quite large we simply eliminate them from the group.
+ (Maybe talk about possible biases to this)
+\end_layout
+
+\begin_layout Standard
+The areas of interest and questions have been modified slightly throughout
+ the lifecycle of the study.
+ We will be focusing on questions that have been asked in every wave and
+ who's question has not been modified significantly throughout time.
+ 
+\end_layout
+
+\begin_layout Standard
+As Wave 1 was the first full questionaaire we can only deal with mortality
+ after Wave 1.
+ So our time periods are mortality prior to Wave 2, 3, 4, 5, 6.
+ Which gives us 5 time series points corresponding to 2005, 2007, 2009,
+ 2011, 2013 approximately.
+ 
+\end_layout
+
+\begin_layout Subsection
+Why we take the log of the mortality 
+\end_layout
+
+\begin_layout Standard
+As age increases the likelihood of dying increases.
+ Over the age of 50 the probability of death follows an approximately log-linear
+ link with age.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+
+\end_inset
+
+This is borne out in our data also.
+ (Do the regression of age vs mortality rate)
+\end_layout
+
+\begin_layout Standard
+In our analysis we also want to see what effects our independent variables
+ have on the log or mortality rate.
+ So throughout our dependent variable will be log mortality.
+ For example if something such as smoking would increase your probability
+ of death in the next year then it follows that we should be regressing
+ this against the log mortality rate.
+ 
+\end_layout
+
+\begin_layout Subsection
+Describe the data in numbers and graphs
+\end_layout
+
+\begin_layout Standard
+General mortality numbers occuring after wave 1(% ages and counts)
+\end_layout
+
+\begin_layout Standard
+Partnership status, marital status
+\end_layout
+
+\begin_layout Standard
+Splitting up the mortality numbers by quintile on income/savings
+\end_layout
+
+\begin_layout Standard
+Qualitfications (or maybe social status)
+\end_layout
+
+\begin_layout Standard
+men/ women
+\end_layout
+
+\begin_layout Subsection
+Basic properties, graph, trends, cycles and other
+\end_layout
+
+\begin_layout Subsection
+Cycle of people more likely to die in december, if we have this data?
+\end_layout
+
+\begin_layout Standard
+There tends to be a higher likelihood for people to die in december.
+ This is quite a strong seasonal cycle.
+ Even though the Uk is a temporate climate, poverty and ill health can lead
+ to people not being able to heat their homes adequately in the winter which
+ may lead to this spike.
+ There's some evidence (find some evidence) that the winter fuel allowance
+ should be increased to help alleviate this problem.
+ But this is beyond the scope of this analysis.
+ 
+\end_layout
+
+\begin_layout Standard
+Include graph of seasonal deaths since wave 1
+\end_layout
+
+\begin_layout Section
+Statistical Model
+\end_layout
+
+\begin_layout Subsection
+Estimate methods to use & why appropriate
+\end_layout
+
+\begin_layout Standard
+Whilst the panel data asks a very broad range of questions it can never
+ fully capture the variability between individuals either through variable
+ being outside of the scope or inadequacies in the estimation procedure.
+ We also suffer from only having 5 time data points to compare our sample
+ over.
+ 
+\end_layout
+
+\begin_layout Standard
+When trying to find predictors of mortality we face some difficulties if
+ we analyze on an individual basis our dependent variable is binary and
+ they become non respondent to the survey in the even of their death.
+ This results in an unbalanced data set.
+ So we need to form groups based on age, sex and class and perform fixed
+ effects regression or random effects regression on them as this allows
+ us to include variables that will absorb the variability in the groups.
+ We will determine which one to use with the Hausman test and the LPG test?!
+ 
+\end_layout
+
+\begin_layout Standard
+As our respondents get older we need to account for the natural trend upwards
+ in mortality by including dummy variables for each wave of the survey.
+ 
+\end_layout
+
+\begin_layout Subsection
+Asuumptions about errors
+\end_layout
+
+\begin_layout Subsection
+OLS but justify choice of estimator
+\end_layout
+
+\begin_layout Standard
+We are going to use something like a Fixed Estimate model or a Random Effects
+ model.
+ 
+\end_layout
+
+\begin_layout Standard
+We will determine which one to use with the Hausman test.
+ 
+\end_layout
+
+\begin_layout Standard
+Including dummy variables for each of the waves.
+ 
+\end_layout
+
+\begin_layout Standard
+talk about ommitted variable bias
+\end_layout
+
+\begin_layout Standard
+Identifying assumption: Unobservable factors that might simultaneously affect
+ the LHS and RHS of the regression are time-invariant.
+ 
+\end_layout
+
+\begin_layout Standard
+The theory behind fixed effects regression
+\end_layout
+
+\begin_layout Standard
+If we believe the regression has the same shape within each of these groups
+ over time, we can estimate the average of the regressions.
+ The way fixed effects regressions handle this is to calculate the changes
+ wrt to the mean of those changes within the group.
+ So we want to know whether variations in mortality are related to variations
+ in our effects.
+ 
+\end_layout
+
+\begin_layout Standard
+We are trying to estimate coefficients of regression for a number of factors
+ (listed above) but across a wide range of different groups.
+ To eliminate some of these differences between the groups 
+\end_layout
+
+\begin_layout Standard
+Need to include dummy for each wave (ts component) and each group (so they
+ can differ)
+\end_layout
+
+\begin_layout Standard
+need to include trend component
+\end_layout
+
+\begin_layout Standard
+Stata will automatically create dummies 
+\end_layout
+
+\begin_layout Standard
+This is known as fixed effects regression becuase it holds constant (fixes)
+ the average effects of each group.
+ 
+\end_layout
+
+\begin_layout Standard
+http://www.jblumenstock.com/files/courses/econ174/FEModels.pdf
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Subsection
+Big important results first
+\end_layout
+
+\begin_layout Subsection
+Metntion briefly the results that proved insignificant
+\end_layout
+
+\begin_layout Subsection
+Include coefficients, std errors, std error regression & diagnostic tests
+\end_layout
+
+\begin_layout Subsection
+Explain results
+\end_layout
+
+\begin_layout Subsection
+Consider size of coefficients & their significance
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Subsection
+What did we learn?
+\end_layout
+
+\begin_layout Subsection
+How were questions answered?
+\end_layout
+
+\begin_layout Subsection
+Relevance for practical Q's of forecasting or policy.
+\end_layout
+
+\begin_layout Subsection
+& answers consitent with theory
+\end_layout
+
+\begin_layout Subsection
+Is model well specified
+\end_layout
+
+\begin_layout Section
+Apendicies
+\end_layout
+
+\begin_layout Standard
+How to run FE in stata.
+\end_layout
+
+\begin_layout Standard
+set panels and year with: xtset country year
+\end_layout
+
+\begin_layout Standard
+if country is string: encode country, gen(country1)
+\end_layout
+
+\begin_layout Standard
+xtline y
+\end_layout
+
+\begin_layout Standard
+gen graph (heterogeneity across acountrie)
+\end_layout
+
+\begin_layout Standard
+bysort country: egen y_mean=mean(y) twoway scatter y country, msymbol(circle_hol
+low) || connected y_mean country, msymbol(diamond) || , xlabel(1 "A" 2 "B"
+ 3 "C" 4 "D" 5 "E" 6 "F" 7 "G")
+\end_layout
+
+\begin_layout Standard
+Heretrogeneity across years
+\end_layout
+
+\begin_layout Standard
+bysort year: egen y_mean1=mean(y) twoway scatter y year, msymbol(circle_hollow)
+ || connected y_mean1 year, msymbol(diamond) || , xlabel(1990(1)1999)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "changing population"
+key "key-1"
+
+\end_inset
+
+http://visual.ons.gov.uk/uk-perspectives-the-changing-population/
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "maybeuseful"
+key "key-2"
+
+\end_inset
+
+https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0334A27557
+D15848549120FE8ECD8D63/S2049847014000077a.pdf/explaining_fixed_effects_random_eff
+ects_modeling_of_timeseries_crosssectional_and_panel_data.pdf
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "actualifetable"
+key "key-3"
+
+\end_inset
+
+https://www.ssa.gov/oact/STATS/table4c6.html
+\end_layout
+
+\end_body
+\end_document
